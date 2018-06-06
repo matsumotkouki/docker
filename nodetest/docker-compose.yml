@@ -1,0 +1,11 @@
+version: '3'
+services:
+  webserver:
+    build: /Users/matsumoto/docker/nodetest
+    image: test-server
+    container_name: node
+    tty: true
+    volumes:
+      - ./node/app:/app
+    ports:
+      - "1111:8081"
