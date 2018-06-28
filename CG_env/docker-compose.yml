@@ -1,0 +1,15 @@
+app:
+  image: debian:jessie
+  volumes:
+    - ./www:/usr/share/php/html
+  tty: true
+php:
+  image: php:5
+  expose:
+    - "80"
+  ports:
+    - "80:80"
+  volumes_from:
+    - app
+  working_dir: /usr/share/php/html
+  command: php -S 0.0.0.0:80
