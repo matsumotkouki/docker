@@ -1,7 +1,7 @@
 version: '3'
 services:
   webserver:
-    build: /Users/matsumoto/docker/nodetest
+    build: ./
     image: test-server
     container_name: node
     tty: true
