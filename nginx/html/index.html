@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="input-area">
+
+
+        <input id="email" type="email" placeholder="メールアドレスを入力" required/>
+        <input id="password" type="password" placeholder="パスワードを入力" required/>
+        <button id="login">ログイン</button>
+        <button id="newuser">新規登録</button>
+    
+    
+    </div>
+    <button id="logout" class="hide">ログアウト</button>
+</body>
+<script src="https://www.gstatic.com/firebasejs/5.4.1/firebase.js"></script>
+<script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyAclS8ojtrGIMwMxKgk4wiDRCy1NawBz1s",
+      authDomain: "indigo-port-201503.firebaseapp.com",
+      databaseURL: "https://indigo-port-201503.firebaseio.com",
+      projectId: "indigo-port-201503",
+      storageBucket: "indigo-port-201503.appspot.com",
+      messagingSenderId: "1075310656835"
+    };
+    firebase.initializeApp(config);
+  </script>
+</html>
